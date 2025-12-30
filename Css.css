@@ -1,171 +1,412 @@
+body{
+    margin: 0;
+}
 
-#Square{
-    position: absolute;
-    background-color: rgba(218, 91, 0, 0.8);
-    top: -1vw;
-    left: 0.1px;
+h1{margin: 0;
 
+}
+h2{
+    margin: 0;
+}
 
+div{
+    margin: 0;
+}
 
+.Profile_Image{
+    border: 2px;
+    border-radius: 100vw;
+    margin: 0;
+}
+
+.Text_Container{
+    margin: 0;
+    background-color: rgba( 0 , 0 , 0 , 0.85);
+    border: 2px;
+    border-radius: 20px;
+}
+
+.Text_Button{
+    margin: 0;
+    font-size: 2vw;
+    color: white;
+}
+
+.Container{
     width: 100%;
     height: 7vw;
+    background-color: rgba( 0 , 0 , 0 , 0.85);
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+
 }
 
 #Header{
-    position: absolute;
-    color: rgba(255, 255, 255, 0.866);
+    color: white;
     font-size: 3vw;
-    top: -1vw;
-    margin-left: 39%;
+
 
 }
 
-#Restaurant_Date{
-    color: rgba(255, 255, 255, 0.866);
+.button-group{
+    display: flex;
+    gap: 10px;    
+}
+
+
+.Button{
+    border-radius: 5px;
+    border: 2px solid white;
+    height: 2.5vw;
+    width: 9vw;
+    align-items: auto();
+}
+
+.Button:hover{
+    cursor: pointer;
+}
+
+#About_Me_Container{
+    background-color: transparent   ;
     position: absolute;
-    font-size: 2vw;
-    top: 2vw;
-    margin-left: 47%;
-}
-
-p{
-    color: rgb(0, 0, 0);
-    font-size: 1.5vw;
-
-}
-
-body {
-  overflow-x: hidden; /* Hide horizontal scrollbar */
-}
-
-/*placeholder*/ 
-
-#Appetizer_PlaceHolder{
-    position: absolute;
-    top: 6vw;
-    left: 0.1px;
-
-
-
-    width: 100%;
-    height: 30vw;
-}
-
-#Header_Appetizer{
-    position: absolute;
-    font-size: 2vw;
-    
-    left: 20vw;
-    top: 3vw;
-}
-
-#Highlight_Appetizer{
-   
-    
     top: 7vw;
-    left: 20vw;
+    flex-direction: column;
+    height: 40vw;
+
+
 }
 
-.Highlight{
-    position: absolute;
-    background-color: rgba(218, 91, 0, 0.8);
-    width: 8.5vw;
-    height: 0.3vw;
+#About_Me{
+    color: rgba( 0 , 0 , 0 , 0.85);
+    font-size: 5vw;
+    font:lighter;
+
+
 }
 
-#HighlightEnder_Appetizer{
-    top: 26vw;
-    left: 20vw; 
-}
-
-#Appetizer_Menu{
-    position: absolute;
-
-    width: 20vw;
+#Profile_Image{
     height: 20vw;
+    width: auto;
+}
 
-    left: 20vw;
-    top: 6vw;
+#About_Me_Text_Container{
+    height: 14vw;
+    width: 55vw;
+    display: flex;
+    justify-content: center;
+}
+
+.Paragraph{
+    font-size: 1.5vw;
+    color: white;
+    font: bold;
 
 }
 
-
-.fade-in {
-  opacity: 0;
-  transform: translateY(50px); 
-  animation: fadeInUp 1s forwards; 
-  animation-delay: 0.5s; 
-}
-
-@keyframes fadeInUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-#Main_Course_Menu{
+#Work_Container{
     position: absolute;
-    width: 100vw;
-    height: 30vw;
+    top: 50vw;
+    height: 40vw;
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    gap: 5px;
+}
+
+.Video_PlaceHolder{
+    margin: 0;
+    height: 25vw;
+    width: 32vw     ;
+    background-color: rgba( 0 , 0 , 0 , 0.85);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px    ;
+    
+}
 
 
-    left: -0.1vw;
-    top: 30vw;
-}       
-
-#Main_Course_PlaceHolder{
+#Work_Text{
+    margin: 0;
     position: absolute;
-    font-size: 2vw;
-
-
-    left: 20vw;
     top: 2vw;
-}
-
-#Main_Course_Highlight{
-    top: 6vw;
-    left: 20vw;
+    font-size: 5vw; 
     
-    width: 10.5vw;
 }
 
-/*text*/
-
-h2{
-   font-size: 0.8vw;
-
+.Video{
+    height: 13vw;
 }
 
-/*Price*/
-
-#Onion_Ring_Price{
+#Skills_Container{
     position: absolute;
-    top: -0.1vw;
-    left: 50vw;
-}
+    display: flex;
+    top: 100vw;
 
-/*Description*/
-
-#Onion_Ring_Description{
-    color: rgba(0, 0, 0, 0.8);
-    position:absolute ;
-    width: 70vw;
+    justify-content: space-around;
     
-
-    top: 2.5vw;
 }
 
-/*Spacing Config*/
-.Spacing{
+#Header_Last{
+    color: white;
+    font-size: 4vw;
+}
+
+
+
+/* Tablet */
+@media (max-width: 768px){
+    .Container{
+        
+        height: 15vw;
+        justify-content: space-around;
+        
+    }
+
+    #Header{
+        font-size: 5vw;
+    }
+
+    .Button{
+        height: 3.5vw;
+        width: 12vw;
+        
+    }
+    
+    .Text_Button{
+        font-size: 20px;
+
+    }
+
+    .button-group{
+        width: auto;
+        gap: 5px;
+
+    }
+
+    #About_Me_Container{
+        top: 15vw;
+        height: 60vw;
+        
+    }
+
+    #About_Me{
+    font-size: 7vw;
+    font:lighter;
+
+
+    }
+
+    #Profile_Image{
+        height: 30vw;
+        width: auto;
+    }   
+
+    #About_Me_Text_Container{
+        height: 20vw;
+        width: 70vw;
+        justify-content: center;
+    }
+
+    .Paragraph{
+        font-size: 2vw ;
+
+    }
+
+    #Work_Container{
+        top: 75vw;
+    }
+
+    .Video_PlaceHolder{
+        height: 40vw;
+        width: 32vw;
+    }
+
+    #Work_Text{
+    font-size: 5vw;
+    }
+
+    .Video{
+    height: 20vw;
+    }
+}
+
+
+/* mobile*/
+@media (max-width: 480px){
+    .Container{
+        
+        height: 15vw;
+        justify-content: space-around;
+        
+    }
+
+    #Header{
+        font-size: 7vw;
+    }
+
+    .Button{
+        height: 3.5vw;
+        width: 15vw;
+        
+    }
+    
+    .Text_Button{
+        font-size: 3.2vw;
+
+    }
+
+    .button-group{
+        width: auto;
+        gap: 5px;
+
+    }
+
+    #About_Me_Container{
+        top: 15vw;
+        height: 100vw;
+        
+    }
+
+    #About_Me{
+    font-size: 10vw;
+    font:lighter;
+
+
+    }
+
+    #Profile_Image{
+        height: 50vw;
+        width: auto;
+    }   
+
+    #About_Me_Text_Container{
+        height: 20vw;
+        width: 90vw;
+        justify-content: center;
+    }
+
+    .Paragraph{
+        font-size: 2.5vw ;
+
+    }
+
+    #Work_Container{
+        top: 116vw;
+        flex-direction: column;
+        height: 130vw;
+    }
+
+    .Video_PlaceHolder{
+        height: 30vw;
+        width: 80vw;
+        flex-direction: row;
+        gap: 5px;
+    }
+
+    #Work_Text{
     position: absolute;
-    background-color : rgba(0, 0, 0, 0.8);
-    width: 50vw ;
-    height: 0.1vw;
-    
+    top: -4vw;
+    font-size: 7vw;
+    }
 
+    .Video{
+    height: 25vw;
+    
+    }
 }
 
-#Onion_Ring_Seperator{
-    top: 5vw;
+
+/**/
+@media (max-width: 1024px) { 
+    .Container{
+        
+        height: 15vw;
+        justify-content: space-around;
+        
+    }
+
+    #Header{
+        font-size: 7vw;
+    }
+
+    .Button{
+        height: 3.5vw;
+        width: 15vw;
+        
+    }
+    
+    .Text_Button{
+        font-size: 3.2vw;
+
+    }
+
+    .button-group{
+        width: auto;
+        gap: 5px;
+
+    }
+
+    #About_Me_Container{
+        top: 15vw;
+        height: 100vw;
+        
+    }
+
+    #About_Me{
+    font-size: 10vw;
+    font:lighter;
+
+
+    }
+
+    #Profile_Image{
+        height: 50vw;
+        width: auto;
+    }   
+
+    #About_Me_Text_Container{
+        height: 20vw;
+        width: 90vw;
+        justify-content: center;
+    }
+
+    .Paragraph{
+        font-size: 2.5vw ;
+
+    }
+
+    #Work_Container{
+        top: 116vw;
+        flex-direction: column;
+        height: 130vw;
+    }
+
+    .Video_PlaceHolder{
+        height: 30vw;
+        width: 80vw;
+        flex-direction: row;
+        gap: 5px;
+    }
+
+    #Work_Text{
+    position: absolute;
+    top: -4vw;
+    font-size: 7vw;
+    }
+
+    .Video{
+    height: 25vw;
+    
+    }
+
+
+    #Skills_Container{
+    top: 230vw;
+
+    
+    }
+
 }
